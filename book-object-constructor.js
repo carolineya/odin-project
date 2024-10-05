@@ -4,10 +4,10 @@ function Book(title, author, pages, read) {
     this.pages = pages;
     this.read = read;
     this.info = function() {
-        console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${this.read}.`)
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}.`
     }
 }
 
 const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295, "read")
 
-book1.info()
+console.log(book1.info())
